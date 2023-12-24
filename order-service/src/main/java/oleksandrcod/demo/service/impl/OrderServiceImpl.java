@@ -25,7 +25,7 @@ public class OrderServiceImpl implements OrderService {
     private final OrderMapper orderMapper;
 
     @Override
-    public void placeOrder(OrderRequestDto requestDto) {
+    public String placeOrder(OrderRequestDto requestDto) {
         Order order = orderMapper.toModel(requestDto);
         order.setOrderNumber(UUID.randomUUID().toString());
 
@@ -45,6 +45,7 @@ public class OrderServiceImpl implements OrderService {
 
         if (allProductsInStock) {
             orderRepository.save(order);
+            return "Order placed successfully.";
         } else {
             throw new IllegalArgumentException("Product is not in stock.");
         }
