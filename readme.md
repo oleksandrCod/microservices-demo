@@ -15,7 +15,7 @@ Spring Boot, Spring Cloud, Spring Cloud Gateway, Spring Cloud Netflix Eureka, Sp
 Spring Data JPA, Lombok, Mapstruct, MySql, MongoDB, Docker, Google JIB, Keycloak, Grafana, Prometheus, Loki, Tempo.
 # Diagram
 
-![Untitled Diagram.jpg](..%2F..%2FDownloads%2FUntitled%20Diagram.jpg)
+![Untitled Diagram.jpg](Untitled%20Diagram.jpg)
 
 ## How to run the application using Docker
 
